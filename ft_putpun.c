@@ -33,14 +33,14 @@ int main(void)
 	void	*ptr_null = NULL;
 
 	printf("Prueba con un puntero válido:\n");
-	ft_putpun(ptr);
+	ft_putpun(ptr); //Da algo parecido a 0x7ffcfb66997c
 	printf("\n%p\n", ptr);
 	printf("\nPrueba con un puntero NULL:\n");
-	ft_putpun(ptr_null);
+	ft_putpun(ptr_null); //(nil)
 	printf("\n%p\n", ptr_null);
 	char str[] = "Hola, mundo";
 	printf("\nPrueba con un puntero a una cadena:\n");
-	ft_putpun(str);
+	ft_putpun(str); //0x7ffcfb669970
 	printf("\n%p\n", str);
 	return (0);
 }
