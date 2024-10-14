@@ -10,7 +10,7 @@ CC = gcc
 #	-Wall: Habilita todas las advertencias recomendadas por el compilador
 #	-Werror: Convierte todas las advertencias en errores(no compila si hay advertencias)
 #	-Wextra: Habilita advertencias adicionales que  -Wall no incluye
-#	-I: Especifica los directorios donde buscarr archivos de cabecera(.h)
+#	-I: Especifica los directorios donde buscar archivos de cabecera(.h)
 CFLAGS = -c -Wall -Werror -Wextra -I
 
 #ar es una herramienta para crear archivos de librería estática
@@ -61,4 +61,5 @@ fclean: clean
 re: fclean all 
 
 #Le dice a make que estos nombres no corresponden a archivos sino a objetos para que no se confunda si existen archivos con esos nombres en el directorio
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re
+#El .PHONY no puede ir con comas para separar
