@@ -1,6 +1,19 @@
-//Este main sirve para comprobar que nuestro printf funciona exactamente como el original
+//Ambos main sirven para comprobar que nuestro printf funciona exactamente como el original
 #include "ft_printf.h"
+//Para comprobar otras conversiones hay que cambiar los % y el valor que le pasamos
+int	main(void)
+{
+	int	n;
+	int	m;
 
+	n = printf("Hola %s, %u\nHola\n", "bruh", -1);
+	printf("%d\n", n);
+	m = ft_printf("Hola %s, %u\nHola\n", "bruh", -1);
+	printf("%d\n", m);
+	return (0);
+}
+
+//Este main es más extenso porque comprueba cada caso
 int main()
 {
 	int				entero = 2147483647;
